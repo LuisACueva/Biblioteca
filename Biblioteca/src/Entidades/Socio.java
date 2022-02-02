@@ -2,7 +2,7 @@ package Entidades;
 
 public class Socio {
 	
-	private long numSocio;	//identificador único de cada socio
+	private long idSocio;	//identificador único de cada socio
 	private String nomSocio;
 	private String priApellido;
 	private String secApellido;
@@ -10,11 +10,11 @@ public class Socio {
 	private String telefono;
 	private String direccion;
 	
-	public long getNumSocio() {
-		return numSocio;
+	public long getIdSocio() {
+		return idSocio;
 	}
-	public void setNumSocio(long numSocio) {
-		this.numSocio = numSocio;
+	public void setIdSocio(long idSocio) {
+		this.idSocio = idSocio;
 	}
 	public String getNomSocio() {
 		return nomSocio;
