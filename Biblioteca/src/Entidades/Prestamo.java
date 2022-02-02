@@ -2,11 +2,14 @@ package Entidades;
 
 import java.time.LocalDate;
 
+import Abstract.Elemento;
+
 public class Prestamo {
 	
 	private long idPrestamo;
 	private LocalDate fechInicio;
 	private LocalDate fechDevolucion;
+	private Elemento[] listElemento = new Elemento[5];
 	
 	public long getIdPrestamo() {
 		return idPrestamo;
@@ -26,6 +29,10 @@ public class Prestamo {
 	public void setFechDevolucion(LocalDate fechDevolucion) {
 		this.fechDevolucion = fechDevolucion;
 	}
-	
-	
+	public Elemento[] getListElemento() {
+		return listElemento;
+	}
+	public void setListElemento(Elemento[] listElemento) {
+		this.listElemento = listElemento;
+	}
 }
