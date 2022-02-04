@@ -1,5 +1,7 @@
 package Entidades;
 
+import java.util.ArrayList;
+
 import Abstract.Elemento;
 
 public class Estanteria {
@@ -7,6 +9,7 @@ public class Estanteria {
 	private long idEstanteria;
 	private String codEstanteria;
 	private boolean completa; //True para completa, False si tiene espacio disponible
+	private ArrayList<Elemento> listElemento;
 	
 	public long getIdEstanteria() {
 		return idEstanteria;
@@ -25,6 +28,12 @@ public class Estanteria {
 	}
 	public void setCompleta(boolean completa) {
 		this.completa = completa;
+	}
+	public ArrayList<Elemento> getListElemento() {
+		return listElemento;
+	}
+	public void setListElemento(ArrayList<Elemento> listElemento) {
+		this.listElemento = listElemento;
 	}
 	
 }
