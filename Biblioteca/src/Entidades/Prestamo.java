@@ -10,6 +10,7 @@ public class Prestamo {
 	private LocalDate fechInicio;
 	private LocalDate fechDevolucion;
 	private Elemento[] listElemento = new Elemento[5];
+	private char estado;
 	
 	public long getIdPrestamo() {
 		return idPrestamo;
@@ -34,5 +35,11 @@ public class Prestamo {
 	}
 	public void setListElemento(Elemento[] listElemento) {
 		this.listElemento = listElemento;
+	}
+	public long getEstado() {
+		return estado;
+	}
+	public void setEstado(char estado) {
+		this.estado = estado;
 	}
 }
