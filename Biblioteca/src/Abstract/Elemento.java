@@ -1,8 +1,11 @@
 package Abstract;
 
+import Entidades.Genero;
+
 public abstract class Elemento {
 	
 	private long idElemento;
+	private Genero genElemento;
 
 	public long getIdElemento() {
 		return idElemento;
@@ -10,6 +13,14 @@ public abstract class Elemento {
 
 	public void setIdElemento(long idElemento) {
 		this.idElemento = idElemento;
+	}
+	
+	public Genero getGenElemento() {
+		return genElemento;
+	}
+
+	public void setGenElemento(Genero genElemento) {
+		this.genElemento = genElemento;
 	}
 
 }
