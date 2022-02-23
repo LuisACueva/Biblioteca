@@ -1,25 +1,26 @@
 package Entidades;
 
 import Abstract.Evento;
+import Abstract.TipoConcurso;
 
 public class Concurso extends Evento {
 
-	private String tipo;
+	private TipoConcurso tipo;
 	private String premio;
 
 	public Concurso() {
-
+		super();
 	}
 
-	public Concurso(String tipo) {
+	public Concurso(TipoConcurso tipo) {
 		this.tipo = tipo;
 	}
 
-	public String getTipo() {
+	public TipoConcurso getTipo() {
 		return tipo;
 	}
 
-	public void setTipo(String tipo) {
+	public void setTipo(TipoConcurso tipo) {
 		this.tipo = tipo;
 	}
 
@@ -33,7 +34,8 @@ public class Concurso extends Evento {
 
 	@Override
 	public String toString() {
-		return "Concurso [tipo=" + tipo + ", premio=" + premio + "]";
+		return "Concurso [idtipo=" + tipo + ", premio=" + premio + "]";
 	}
 
+	
 }

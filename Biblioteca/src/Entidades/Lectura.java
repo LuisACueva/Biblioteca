@@ -4,23 +4,21 @@ import Abstract.Evento;
 
 public class Lectura extends Evento{
 	
-	private String libro;
+	private Libro libro;
 	
-	public Lectura(String libro) {
+	public Lectura(Libro libro) {
+		super();
 		this.libro = libro;
 	}
 	
-	public String getLibro() {
+	public Libro getLibro() {
 		return this.libro;
 	}
 	
-	public void setLibro(String libro) {
+	public void setLibro(Libro libro) {
 		this.libro = libro;
 	}
 
-	@Override
-	public String toString() {
-		return "Lectura [libro=" + libro + "]";
-	}
+	
 	
 }

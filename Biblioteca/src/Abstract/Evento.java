@@ -27,5 +27,4 @@ public abstract class Evento {
 		this.fechEvento = fechEvento;
 	}
 	
-	
 }
