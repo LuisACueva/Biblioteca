@@ -1,6 +1,6 @@
 package Abstract;
 
-import Entidades.Genero;
+import Abstract.Genero;
 
 public abstract class Elemento {
 	
