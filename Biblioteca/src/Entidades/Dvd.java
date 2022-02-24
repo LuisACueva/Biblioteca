@@ -7,6 +7,7 @@ public class Dvd extends Elemento {
 	private String nomDvd;
 
 	public Dvd(String nomDvd) {
+		super();
 		this.nomDvd = nomDvd;
 	}
 

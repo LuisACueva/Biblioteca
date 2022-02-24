@@ -12,6 +12,16 @@ public class Lote {
 	private ArrayList<Elemento> listElemento;
 	private Proveedor proveedor;
 	
+	public Lote() {
+		
+	}
+	
+	public Lote(LocalDate llegadaDate, ArrayList<Elemento> listElemento, Proveedor proveedor) {
+		this.llegadaDate = llegadaDate;
+		this.listElemento = listElemento;
+		this.proveedor = proveedor;
+	}
+	
 	public long getIdLote() {
 		return idLote;
 	}
@@ -36,5 +46,10 @@ public class Lote {
 	public void setProveedor(Proveedor proveedor) {
 		this.proveedor = proveedor;
 	}
-	
+
+	@Override
+	public String toString() {
+		return "Lote [idLote=" + idLote + ", llegadaDate=" + llegadaDate + ", listElemento=" + listElemento
+				+ ", proveedor=" + proveedor + "]";
+	}
 }

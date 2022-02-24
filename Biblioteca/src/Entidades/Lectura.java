@@ -19,6 +19,9 @@ public class Lectura extends Evento{
 		this.libro = libro;
 	}
 
-	
+	@Override
+	public String toString() {
+		return "Lectura [libro=" + libro + "]";
+	}
 	
 }

@@ -13,6 +13,7 @@ public class Concurso extends Evento {
 	}
 
 	public Concurso(TipoConcurso tipo) {
+		super();
 		this.tipo = tipo;
 	}
 
@@ -34,8 +35,7 @@ public class Concurso extends Evento {
 
 	@Override
 	public String toString() {
-		return "Concurso [idtipo=" + tipo + ", premio=" + premio + "]";
+		return "Concurso [tipo=" + tipo + ", premio=" + premio + "]";
 	}
-
 	
 }

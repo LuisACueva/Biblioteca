@@ -8,10 +8,11 @@ public class Curso extends Evento {
 	private String aula;
 
 	public Curso() {
-
+		super();
 	}
 
 	public Curso(int duracion, String aula) {
+		super();
 		this.aula = aula;
 		this.duracion = duracion;
 	}
