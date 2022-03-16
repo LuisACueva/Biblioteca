@@ -10,6 +10,16 @@ public class Socio {
 	private String telefono;
 	private String direccion;
 	
+	public Socio(long id, String nom, String priA, String secA, String nif, String tel, String dir) {
+		this.idSocio = id;
+		this.nomSocio = nom;
+		this.priApellido = priA;
+		this.secApellido = secA;
+		this.nif = nif;
+		this.telefono = tel;
+		this.direccion = dir;
+	}
+	
 	public long getIdSocio() {
 		return idSocio;
 	}

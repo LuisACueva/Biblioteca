@@ -12,6 +12,14 @@ public class Prestamo {
 	private Elemento[] listElemento = new Elemento[5];
 	private String estado;
 	
+	public Prestamo(long id, LocalDate fechI, LocalDate fechD, Elemento[] listE, String estado) {
+		this.idPrestamo = id;
+		this.fechInicio = fechI;
+		this.fechDevolucion = fechD;
+		this.listElemento = listE;
+		this.estado = estado;
+	}
+	
 	public long getIdPrestamo() {
 		return idPrestamo;
 	}

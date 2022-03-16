@@ -6,6 +6,12 @@ public class Proveedor {
 	private String nomProveedor;
 	private String telefono;
 	
+	public Proveedor(long id, String nom, String tel) {
+		this.idProveedor = id;
+		this.nomProveedor = nom;
+		this.telefono = tel;
+	}
+	
 	public long getIdProveedor() {
 		return idProveedor;
 	}
