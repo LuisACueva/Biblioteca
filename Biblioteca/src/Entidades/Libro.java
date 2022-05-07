@@ -3,7 +3,8 @@ package Entidades;
 import Abstract.Elemento;
 
 public class Libro extends Elemento {
-
+	
+	private long idLibro;
 	private String nomLibro;
 	private String editorial;
 	private String autor;
@@ -13,14 +14,23 @@ public class Libro extends Elemento {
 		super();
 	}
 
-	public Libro(String nomLibro, String editorial, String autor, int numPaginas) {
+	public Libro(long id, String nomLibro, String editorial, String autor, int numPaginas) {
 		super();
+		this.idLibro = id;
 		this.nomLibro = nomLibro;
 		this.editorial = editorial;
 		this.autor = autor;
 		this.numPaginas = numPaginas;
 	}
 
+	public long getIdLibro() {
+		return idLibro;
+	}
+
+	public void setIdLibro(long id) {
+		this.idLibro = id;
+	}
+	
 	public String getNomLibro() {
 		return nomLibro;
 	}
