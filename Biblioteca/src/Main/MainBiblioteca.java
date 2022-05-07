@@ -64,7 +64,7 @@ public class MainBiblioteca {
 
 		boolean pass = false;
 		do {
-			//Menu principal de la aplicacion
+			//Menu principal de la aplicacion por actualizar
 			
 			switch(Validaciones.validarMenu(menu0, 0, 5)) {
 			case 0:
