@@ -1,11 +1,13 @@
 package Main;
 
+import java.sql.Connection;
 import java.util.Scanner;
 
+import Utilidades.ConexBD;
 import Utilidades.Validaciones;
 
 public class MainBiblioteca {
-
+	
 	static String menu0 = "Bienvenido a la Biblioteca.\n" + 
 							"Seleccione su tipo de Usuario:\n" + 
 							"\t\t1. Gestion de Socios.\n" + 
@@ -56,7 +58,7 @@ public class MainBiblioteca {
 							"\t\t0. Volver al Menu Principal.";
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		Scanner sc = new Scanner(System.in);
 
 		System.out.print("Biblioteca");
