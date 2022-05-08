@@ -93,8 +93,37 @@ public class LibroDAO implements operacionesCRUD<Libro> {
 
 	@Override
 	public Libro buscarPorID(long id) {
-		// TODO Auto-generated method stub
-		return null;
+		Libro ret = null;
+		String consultaInsertStr = "select * FROM libros WHERE id=?";
+		try {
+			if (this.conex == null || this.conex.isClosed())
+				this.conex = ConexBD.establecerConexion();
+			PreparedStatement pstmt = conex.prepareStatement(consultaInsertStr);
+			pstmt.setLong(1, id);
+			ResultSet result = pstmt.executeQuery();
+			while (result.next()) {
+				long idLibro = result.getLong("idLibro");
+				String nomLibro = result.getString("nomLibro");
+				String editorial = result.getString("editorial");
+				String autor = result.getString("autor");
+				int numPaginas = result.getInt("numPaginas");
+				ret = new Libro();
+				ret.setIdLibro(idLibro);
+				ret.setNomLibro(nomLibro);
+				ret.setEditorial(editorial);
+				ret.setAutor(autor);
+				ret.setNumPaginas(numPaginas);
+			}
+			if (conex != null)
+				conex.close();
+		} catch (SQLException e) {
+			System.out.println("Se ha producido una SQLException:" + e.getMessage());
+			e.printStackTrace();
+		} catch (Exception e) {
+			System.out.println("Se ha producido una Exception:" + e.getMessage());
+			e.printStackTrace();
+		}
+		return ret;
 	}
 
 	@Override
